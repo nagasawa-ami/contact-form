@@ -16,7 +16,7 @@ class ContactController extends Controller
     //入力フォームのデータの受け取り
     public function confirm(Request $request)
     {
-        $contact = $request->only(['name'. 'email', 'tel', 'content']);
+         $contact = $request->only(['name'. 'email', 'tel', 'content']);
         return view('confirm', compact('contact'));
     }
 
